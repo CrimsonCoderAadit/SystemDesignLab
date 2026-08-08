@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: lab5-consistent-hashing
+
+app:
+  hash-ring:
+    virtual-nodes: 150
+    initial-nodes:
+      - mongo1
+      - mongo2
+      - mongo3
+  mongo:
+    nodes:
+      mongo1:
+        host: localhost
+        port: 28017
+        database: studentdb1
+      mongo2:
+        host: localhost
+        port: 28018
+        database: studentdb2
+      mongo3:
+        host: localhost
+        port: 28019
+        database: studentdb3
+      mongo4:
+        host: localhost
+        port: 28020
+        database: studentdb4

@@ -1,0 +1,62 @@
+services:
+  mongo1:
+    image: mongo:7.0
+    container_name: mongo1
+    restart: unless-stopped
+    ports:
+      - "28017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: studentdb1
+    volumes:
+      - mongo1_data:/data/db
+    networks:
+      - hashring-net
+
+  mongo2:
+    image: mongo:7.0
+    container_name: mongo2
+    restart: unless-stopped
+    ports:
+      - "28018:27017"
+    environment:
+      MONGO_INITDB_DATABASE: studentdb2
+    volumes:
+      - mongo2_data:/data/db
+    networks:
+      - hashring-net
+
+  mongo3:
+    image: mongo:7.0
+    container_name: mongo3
+    restart: unless-stopped
+    ports:
+      - "28019:27017"
+    environment:
+      MONGO_INITDB_DATABASE: studentdb3
+    volumes:
+      - mongo3_data:/data/db
+    networks:
+      - hashring-net
+
+  mongo4:
+    image: mongo:7.0
+    container_name: mongo4
+    restart: unless-stopped
+    ports:
+      - "28020:27017"
+    environment:
+      MONGO_INITDB_DATABASE: studentdb4
+    volumes:
+      - mongo4_data:/data/db
+    networks:
+      - hashring-net
+
+networks:
+  hashring-net:
+    driver: bridge
+
+volumes:
+  mongo1_data:
+  mongo2_data:
+  mongo3_data:
+  mongo4_data:
