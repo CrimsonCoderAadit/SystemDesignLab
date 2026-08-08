@@ -1,0 +1,120 @@
+name: mongodb-sharding
+
+networks:
+  shardnet:
+    name: shardnet
+    driver: bridge
+
+services:
+  # ------------------------------------------------------------------
+  # Config Server Replica Set (cfgRS) - stores cluster metadata
+  # ------------------------------------------------------------------
+  configsvr:
+    image: mongo:7.0
+    container_name: configsvr
+    hostname: configsvr
+    networks:
+      - shardnet
+    command:
+      [
+        "mongod",
+        "--configsvr",
+        "--replSet",
+        "cfgRS",
+        "--port",
+        "27017",
+        "--bind_ip_all",
+      ]
+    ports:
+      - "27019:27017"
+    volumes:
+      - configsvr_data:/data/db
+      - ./init:/scripts:ro
+    restart: unless-stopped
+
+  # ------------------------------------------------------------------
+  # Shard 1 Replica Set (shard1RS)
+  # ------------------------------------------------------------------
+  shard1:
+    image: mongo:7.0
+    container_name: shard1
+    hostname: shard1
+    networks:
+      - shardnet
+    command:
+      [
+        "mongod",
+        "--shardsvr",
+        "--replSet",
+        "shard1RS",
+        "--port",
+        "27017",
+        "--bind_ip_all",
+      ]
+    ports:
+      - "27018:27017"
+    volumes:
+      - shard1_data:/data/db
+      - ./init:/scripts:ro
+    restart: unless-stopped
+
+  # ------------------------------------------------------------------
+  # Shard 2 Replica Set (shard2RS)
+  # ------------------------------------------------------------------
+  shard2:
+    image: mongo:7.0
+    container_name: shard2
+    hostname: shard2
+    networks:
+      - shardnet
+    command:
+      [
+        "mongod",
+        "--shardsvr",
+        "--replSet",
+        "shard2RS",
+        "--port",
+        "27017",
+        "--bind_ip_all",
+      ]
+    ports:
+      - "27020:27017"
+    volumes:
+      - shard2_data:/data/db
+      - ./init:/scripts:ro
+    restart: unless-stopped
+
+  # ------------------------------------------------------------------
+  # mongos Query Router - single entry point for client applications
+  # ------------------------------------------------------------------
+  mongos:
+    image: mongo:7.0
+    container_name: mongos
+    hostname: mongos
+    networks:
+      - shardnet
+    depends_on:
+      - configsvr
+      - shard1
+      - shard2
+    command:
+      [
+        "mongos",
+        "--configdb",
+        "cfgRS/configsvr:27017",
+        "--bind_ip_all",
+        "--port",
+        "27017",
+      ]
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./init:/scripts:ro
+      - ./scripts:/app-scripts:ro
+      - ./sample-data:/sample-data:ro
+    restart: unless-stopped
+
+volumes:
+  configsvr_data:
+  shard1_data:
+  shard2_data:

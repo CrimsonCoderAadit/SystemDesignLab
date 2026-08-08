@@ -1,0 +1,1052 @@
+[
+  {
+    "RollNo": 1,
+    "Name": "Aarav Sharma",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 5.37
+  },
+  {
+    "RollNo": 2,
+    "Name": "Vivaan Sharma",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 5.74
+  },
+  {
+    "RollNo": 3,
+    "Name": "Aditya Sharma",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 6.11
+  },
+  {
+    "RollNo": 4,
+    "Name": "Vihaan Sharma",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 6.48
+  },
+  {
+    "RollNo": 5,
+    "Name": "Arjun Sharma",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 6.85
+  },
+  {
+    "RollNo": 6,
+    "Name": "Sai Sharma",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 7.22
+  },
+  {
+    "RollNo": 7,
+    "Name": "Reyansh Sharma",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 7.59
+  },
+  {
+    "RollNo": 8,
+    "Name": "Ayaan Sharma",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 7.96
+  },
+  {
+    "RollNo": 9,
+    "Name": "Krishna Sharma",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 8.33
+  },
+  {
+    "RollNo": 10,
+    "Name": "Ishaan Sharma",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 8.7
+  },
+  {
+    "RollNo": 11,
+    "Name": "Ananya Sharma",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 9.07
+  },
+  {
+    "RollNo": 12,
+    "Name": "Diya Sharma",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 9.44
+  },
+  {
+    "RollNo": 13,
+    "Name": "Saanvi Sharma",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 9.81
+  },
+  {
+    "RollNo": 14,
+    "Name": "Aadhya Sharma",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 5.18
+  },
+  {
+    "RollNo": 15,
+    "Name": "Kiara Sharma",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 5.55
+  },
+  {
+    "RollNo": 16,
+    "Name": "Myra Sharma",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 5.92
+  },
+  {
+    "RollNo": 17,
+    "Name": "Anika Sharma",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 6.29
+  },
+  {
+    "RollNo": 18,
+    "Name": "Navya Sharma",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 6.66
+  },
+  {
+    "RollNo": 19,
+    "Name": "Riya Sharma",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 7.03
+  },
+  {
+    "RollNo": 20,
+    "Name": "Sara Sharma",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 7.4
+  },
+  {
+    "RollNo": 21,
+    "Name": "Rohan Sharma",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 7.77
+  },
+  {
+    "RollNo": 22,
+    "Name": "Karthik Sharma",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 8.14
+  },
+  {
+    "RollNo": 23,
+    "Name": "Nikhil Sharma",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 8.51
+  },
+  {
+    "RollNo": 24,
+    "Name": "Varun Sharma",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 8.88
+  },
+  {
+    "RollNo": 25,
+    "Name": "Siddharth Sharma",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 9.25
+  },
+  {
+    "RollNo": 26,
+    "Name": "Meera Sharma",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 9.62
+  },
+  {
+    "RollNo": 27,
+    "Name": "Priya Sharma",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 9.99
+  },
+  {
+    "RollNo": 28,
+    "Name": "Sneha Sharma",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 5.36
+  },
+  {
+    "RollNo": 29,
+    "Name": "Pooja Sharma",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 5.73
+  },
+  {
+    "RollNo": 30,
+    "Name": "Divya Sharma",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 6.1
+  },
+  {
+    "RollNo": 31,
+    "Name": "Aarav Verma",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 6.47
+  },
+  {
+    "RollNo": 32,
+    "Name": "Vivaan Verma",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 6.84
+  },
+  {
+    "RollNo": 33,
+    "Name": "Aditya Verma",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 7.21
+  },
+  {
+    "RollNo": 34,
+    "Name": "Vihaan Verma",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 7.58
+  },
+  {
+    "RollNo": 35,
+    "Name": "Arjun Verma",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 7.95
+  },
+  {
+    "RollNo": 36,
+    "Name": "Sai Verma",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 8.32
+  },
+  {
+    "RollNo": 37,
+    "Name": "Reyansh Verma",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 8.69
+  },
+  {
+    "RollNo": 38,
+    "Name": "Ayaan Verma",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 9.06
+  },
+  {
+    "RollNo": 39,
+    "Name": "Krishna Verma",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 9.43
+  },
+  {
+    "RollNo": 40,
+    "Name": "Ishaan Verma",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 9.8
+  },
+  {
+    "RollNo": 41,
+    "Name": "Ananya Verma",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 5.17
+  },
+  {
+    "RollNo": 42,
+    "Name": "Diya Verma",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 5.54
+  },
+  {
+    "RollNo": 43,
+    "Name": "Saanvi Verma",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 5.91
+  },
+  {
+    "RollNo": 44,
+    "Name": "Aadhya Verma",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 6.28
+  },
+  {
+    "RollNo": 45,
+    "Name": "Kiara Verma",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 6.65
+  },
+  {
+    "RollNo": 46,
+    "Name": "Myra Verma",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 7.02
+  },
+  {
+    "RollNo": 47,
+    "Name": "Anika Verma",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 7.39
+  },
+  {
+    "RollNo": 48,
+    "Name": "Navya Verma",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 7.76
+  },
+  {
+    "RollNo": 49,
+    "Name": "Riya Verma",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 8.13
+  },
+  {
+    "RollNo": 50,
+    "Name": "Sara Verma",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 8.5
+  },
+  {
+    "RollNo": 51,
+    "Name": "Rohan Verma",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 8.87
+  },
+  {
+    "RollNo": 52,
+    "Name": "Karthik Verma",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 9.24
+  },
+  {
+    "RollNo": 53,
+    "Name": "Nikhil Verma",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 9.61
+  },
+  {
+    "RollNo": 54,
+    "Name": "Varun Verma",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 9.98
+  },
+  {
+    "RollNo": 55,
+    "Name": "Siddharth Verma",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 5.35
+  },
+  {
+    "RollNo": 56,
+    "Name": "Meera Verma",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 5.72
+  },
+  {
+    "RollNo": 57,
+    "Name": "Priya Verma",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 6.09
+  },
+  {
+    "RollNo": 58,
+    "Name": "Sneha Verma",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 6.46
+  },
+  {
+    "RollNo": 59,
+    "Name": "Pooja Verma",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 6.83
+  },
+  {
+    "RollNo": 60,
+    "Name": "Divya Verma",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 7.2
+  },
+  {
+    "RollNo": 61,
+    "Name": "Aarav Iyer",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 7.57
+  },
+  {
+    "RollNo": 62,
+    "Name": "Vivaan Iyer",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 7.94
+  },
+  {
+    "RollNo": 63,
+    "Name": "Aditya Iyer",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 8.31
+  },
+  {
+    "RollNo": 64,
+    "Name": "Vihaan Iyer",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 8.68
+  },
+  {
+    "RollNo": 65,
+    "Name": "Arjun Iyer",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 9.05
+  },
+  {
+    "RollNo": 66,
+    "Name": "Sai Iyer",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 9.42
+  },
+  {
+    "RollNo": 67,
+    "Name": "Reyansh Iyer",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 9.79
+  },
+  {
+    "RollNo": 68,
+    "Name": "Ayaan Iyer",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 5.16
+  },
+  {
+    "RollNo": 69,
+    "Name": "Krishna Iyer",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 5.53
+  },
+  {
+    "RollNo": 70,
+    "Name": "Ishaan Iyer",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 5.9
+  },
+  {
+    "RollNo": 71,
+    "Name": "Ananya Iyer",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 6.27
+  },
+  {
+    "RollNo": 72,
+    "Name": "Diya Iyer",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 6.64
+  },
+  {
+    "RollNo": 73,
+    "Name": "Saanvi Iyer",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 7.01
+  },
+  {
+    "RollNo": 74,
+    "Name": "Aadhya Iyer",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 7.38
+  },
+  {
+    "RollNo": 75,
+    "Name": "Kiara Iyer",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 7.75
+  },
+  {
+    "RollNo": 76,
+    "Name": "Myra Iyer",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 8.12
+  },
+  {
+    "RollNo": 77,
+    "Name": "Anika Iyer",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 8.49
+  },
+  {
+    "RollNo": 78,
+    "Name": "Navya Iyer",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 8.86
+  },
+  {
+    "RollNo": 79,
+    "Name": "Riya Iyer",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 9.23
+  },
+  {
+    "RollNo": 80,
+    "Name": "Sara Iyer",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 9.6
+  },
+  {
+    "RollNo": 81,
+    "Name": "Rohan Iyer",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 9.97
+  },
+  {
+    "RollNo": 82,
+    "Name": "Karthik Iyer",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 5.34
+  },
+  {
+    "RollNo": 83,
+    "Name": "Nikhil Iyer",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 5.71
+  },
+  {
+    "RollNo": 84,
+    "Name": "Varun Iyer",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 6.08
+  },
+  {
+    "RollNo": 85,
+    "Name": "Siddharth Iyer",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 6.45
+  },
+  {
+    "RollNo": 86,
+    "Name": "Meera Iyer",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 6.82
+  },
+  {
+    "RollNo": 87,
+    "Name": "Priya Iyer",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 7.19
+  },
+  {
+    "RollNo": 88,
+    "Name": "Sneha Iyer",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 7.56
+  },
+  {
+    "RollNo": 89,
+    "Name": "Pooja Iyer",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 7.93
+  },
+  {
+    "RollNo": 90,
+    "Name": "Divya Iyer",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 8.3
+  },
+  {
+    "RollNo": 91,
+    "Name": "Aarav Nair",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 8.67
+  },
+  {
+    "RollNo": 92,
+    "Name": "Vivaan Nair",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 9.04
+  },
+  {
+    "RollNo": 93,
+    "Name": "Aditya Nair",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 9.41
+  },
+  {
+    "RollNo": 94,
+    "Name": "Vihaan Nair",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 9.78
+  },
+  {
+    "RollNo": 95,
+    "Name": "Arjun Nair",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 5.15
+  },
+  {
+    "RollNo": 96,
+    "Name": "Sai Nair",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 5.52
+  },
+  {
+    "RollNo": 97,
+    "Name": "Reyansh Nair",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 5.89
+  },
+  {
+    "RollNo": 98,
+    "Name": "Ayaan Nair",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 6.26
+  },
+  {
+    "RollNo": 99,
+    "Name": "Krishna Nair",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 6.63
+  },
+  {
+    "RollNo": 100,
+    "Name": "Ishaan Nair",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 7
+  },
+  {
+    "RollNo": 101,
+    "Name": "Ananya Nair",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 7.37
+  },
+  {
+    "RollNo": 102,
+    "Name": "Diya Nair",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 7.74
+  },
+  {
+    "RollNo": 103,
+    "Name": "Saanvi Nair",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 8.11
+  },
+  {
+    "RollNo": 104,
+    "Name": "Aadhya Nair",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 8.48
+  },
+  {
+    "RollNo": 105,
+    "Name": "Kiara Nair",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 8.85
+  },
+  {
+    "RollNo": 106,
+    "Name": "Myra Nair",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 9.22
+  },
+  {
+    "RollNo": 107,
+    "Name": "Anika Nair",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 9.59
+  },
+  {
+    "RollNo": 108,
+    "Name": "Navya Nair",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 9.96
+  },
+  {
+    "RollNo": 109,
+    "Name": "Riya Nair",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 5.33
+  },
+  {
+    "RollNo": 110,
+    "Name": "Sara Nair",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 5.7
+  },
+  {
+    "RollNo": 111,
+    "Name": "Rohan Nair",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 6.07
+  },
+  {
+    "RollNo": 112,
+    "Name": "Karthik Nair",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 6.44
+  },
+  {
+    "RollNo": 113,
+    "Name": "Nikhil Nair",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 6.81
+  },
+  {
+    "RollNo": 114,
+    "Name": "Varun Nair",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 7.18
+  },
+  {
+    "RollNo": 115,
+    "Name": "Siddharth Nair",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 7.55
+  },
+  {
+    "RollNo": 116,
+    "Name": "Meera Nair",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 7.92
+  },
+  {
+    "RollNo": 117,
+    "Name": "Priya Nair",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 8.29
+  },
+  {
+    "RollNo": 118,
+    "Name": "Sneha Nair",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 8.66
+  },
+  {
+    "RollNo": 119,
+    "Name": "Pooja Nair",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 9.03
+  },
+  {
+    "RollNo": 120,
+    "Name": "Divya Nair",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 9.4
+  },
+  {
+    "RollNo": 121,
+    "Name": "Aarav Reddy",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 9.77
+  },
+  {
+    "RollNo": 122,
+    "Name": "Vivaan Reddy",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 5.14
+  },
+  {
+    "RollNo": 123,
+    "Name": "Aditya Reddy",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 5.51
+  },
+  {
+    "RollNo": 124,
+    "Name": "Vihaan Reddy",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 5.88
+  },
+  {
+    "RollNo": 125,
+    "Name": "Arjun Reddy",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 6.25
+  },
+  {
+    "RollNo": 126,
+    "Name": "Sai Reddy",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 6.62
+  },
+  {
+    "RollNo": 127,
+    "Name": "Reyansh Reddy",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 6.99
+  },
+  {
+    "RollNo": 128,
+    "Name": "Ayaan Reddy",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 7.36
+  },
+  {
+    "RollNo": 129,
+    "Name": "Krishna Reddy",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 7.73
+  },
+  {
+    "RollNo": 130,
+    "Name": "Ishaan Reddy",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 8.1
+  },
+  {
+    "RollNo": 131,
+    "Name": "Ananya Reddy",
+    "Department": "CSE",
+    "Year": 3,
+    "CGPA": 8.47
+  },
+  {
+    "RollNo": 132,
+    "Name": "Diya Reddy",
+    "Department": "ECE",
+    "Year": 4,
+    "CGPA": 8.84
+  },
+  {
+    "RollNo": 133,
+    "Name": "Saanvi Reddy",
+    "Department": "IT",
+    "Year": 1,
+    "CGPA": 9.21
+  },
+  {
+    "RollNo": 134,
+    "Name": "Aadhya Reddy",
+    "Department": "EEE",
+    "Year": 2,
+    "CGPA": 9.58
+  },
+  {
+    "RollNo": 135,
+    "Name": "Kiara Reddy",
+    "Department": "MECH",
+    "Year": 3,
+    "CGPA": 9.95
+  },
+  {
+    "RollNo": 136,
+    "Name": "Myra Reddy",
+    "Department": "CSE",
+    "Year": 4,
+    "CGPA": 5.32
+  },
+  {
+    "RollNo": 137,
+    "Name": "Anika Reddy",
+    "Department": "ECE",
+    "Year": 1,
+    "CGPA": 5.69
+  },
+  {
+    "RollNo": 138,
+    "Name": "Navya Reddy",
+    "Department": "IT",
+    "Year": 2,
+    "CGPA": 6.06
+  },
+  {
+    "RollNo": 139,
+    "Name": "Riya Reddy",
+    "Department": "EEE",
+    "Year": 3,
+    "CGPA": 6.43
+  },
+  {
+    "RollNo": 140,
+    "Name": "Sara Reddy",
+    "Department": "MECH",
+    "Year": 4,
+    "CGPA": 6.8
+  },
+  {
+    "RollNo": 141,
+    "Name": "Rohan Reddy",
+    "Department": "CSE",
+    "Year": 1,
+    "CGPA": 7.17
+  },
+  {
+    "RollNo": 142,
+    "Name": "Karthik Reddy",
+    "Department": "ECE",
+    "Year": 2,
+    "CGPA": 7.54
+  },
+  {
+    "RollNo": 143,
+    "Name": "Nikhil Reddy",
+    "Department": "IT",
+    "Year": 3,
+    "CGPA": 7.91
+  },
+  {
+    "RollNo": 144,
+    "Name": "Varun Reddy",
+    "Department": "EEE",
+    "Year": 4,
+    "CGPA": 8.28
+  },
+  {
+    "RollNo": 145,
+    "Name": "Siddharth Reddy",
+    "Department": "MECH",
+    "Year": 1,
+    "CGPA": 8.65
+  },
+  {
+    "RollNo": 146,
+    "Name": "Meera Reddy",
+    "Department": "CSE",
+    "Year": 2,
+    "CGPA": 9.02
+  },
+  {
+    "RollNo": 147,
+    "Name": "Priya Reddy",
+    "Department": "ECE",
+    "Year": 3,
+    "CGPA": 9.39
+  },
+  {
+    "RollNo": 148,
+    "Name": "Sneha Reddy",
+    "Department": "IT",
+    "Year": 4,
+    "CGPA": 9.76
+  },
+  {
+    "RollNo": 149,
+    "Name": "Pooja Reddy",
+    "Department": "EEE",
+    "Year": 1,
+    "CGPA": 5.13
+  },
+  {
+    "RollNo": 150,
+    "Name": "Divya Reddy",
+    "Department": "MECH",
+    "Year": 2,
+    "CGPA": 5.5
+  }
+]
