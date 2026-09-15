@@ -1,0 +1,92 @@
+{
+  "info": {
+    "name": "System Design Lab 8 - Web Crawler",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" }
+  ],
+  "item": [
+    {
+      "name": "1 - Normal Crawl",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"seedUrl\": \"https://example.com\",\n  \"maxPages\": 5\n}"
+        },
+        "url": "{{baseUrl}}/api/crawl"
+      }
+    },
+    {
+      "name": "2 - Repeated Seed URL (duplicate check)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"seedUrl\": \"https://example.com\",\n  \"maxPages\": 5\n}"
+        },
+        "url": "{{baseUrl}}/api/crawl"
+      }
+    },
+    {
+      "name": "3 - Invalid URL",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"seedUrl\": \"javascript:alert(1)\",\n  \"maxPages\": 5\n}"
+        },
+        "url": "{{baseUrl}}/api/crawl"
+      }
+    },
+    {
+      "name": "4 - Get Visited URLs",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/visited"
+      }
+    },
+    {
+      "name": "5 - Reset Crawler State",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/api/reset"
+      }
+    },
+    {
+      "name": "6 - Crawl Again After Reset",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"seedUrl\": \"https://example.com\",\n  \"maxPages\": 5\n}"
+        },
+        "url": "{{baseUrl}}/api/crawl"
+      }
+    },
+    {
+      "name": "7 - Crawler Status",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/status"
+      }
+    },
+    {
+      "name": "8 - SSRF Protection (localhost rejected)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"seedUrl\": \"http://127.0.0.1:8080\",\n  \"maxPages\": 5\n}"
+        },
+        "url": "{{baseUrl}}/api/crawl"
+      }
+    }
+  ]
+}
