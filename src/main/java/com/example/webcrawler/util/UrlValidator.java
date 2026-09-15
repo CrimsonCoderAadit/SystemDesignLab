@@ -19,14 +19,27 @@ import java.util.Locale;
  *   - Only http/https schemes are allowed. javascript:, mailto:, tel:, file:
  *     and any other scheme are rejected outright.
  *   - The hostname is resolved and checked against loopback, link-local,
- *     site-local (private) and any-local ("0.0.0.0") address ranges using
- *     InetAddress, so both literal IPs (127.0.0.1, ::1, 169.254.x.x, etc.)
- *     and hostnames that resolve to such addresses (e.g. "localhost") are
- *     rejected. This also covers the redirect case: CrawlerService resolves
- *     the *final* URL Jsoup lands on through this same validator, so a
- *     public URL that redirects to an internal address is caught too.
+ *     site-local (private), IPv6 unique-local (fc00::/7) and any-local
+ *     ("0.0.0.0") address ranges using InetAddress, so both literal IPs
+ *     (127.0.0.1, ::1, 169.254.x.x, etc.) and hostnames that resolve to
+ *     such addresses (e.g. "localhost") are rejected. CrawlerService also
+ *     validates each redirect hop through this same validator BEFORE
+ *     connecting to it, so a public URL that redirects to an internal
+ *     address is caught before that request is ever made.
  *   - allowLocalTargets (CrawlerProperties) is a development-only override
  *     for the bundled sample-pages demo and defaults to false.
+ *
+ *   KNOWN LIMITATION (accepted for this lab's scope): this check has a
+ *   time-of-check/time-of-use gap against DNS rebinding. The hostname is
+ *   resolved here to validate it, but the actual HTTP connection made
+ *   later (by Jsoup) re-resolves the same hostname independently; if an
+ *   attacker controls DNS for that hostname and returns a public IP for
+ *   this check but a private IP moments later for the real connection,
+ *   the private address would not be re-validated. Closing this gap fully
+ *   requires pinning the validated IP for the actual socket connection
+ *   (and, for HTTPS, keeping TLS SNI/hostname verification against the
+ *   original hostname) - out of scope for this lab's Jsoup-based fetcher,
+ *   but noted here for anyone hardening this for production use.
  *
  * Normalization rules:
  *   - Fragments (#section) are stripped since they identify a location
@@ -109,7 +122,8 @@ public class UrlValidator {
                         || address.isAnyLocalAddress()
                         || address.isLinkLocalAddress()
                         || address.isSiteLocalAddress()
-                        || address.isMulticastAddress()) {
+                        || address.isMulticastAddress()
+                        || isIpv6UniqueLocal(address)) {
                     return true;
                 }
             }
@@ -118,6 +132,18 @@ public class UrlValidator {
             // Cannot resolve -> cannot safely crawl.
             return true;
         }
+    }
+
+    /**
+     * Checks the IPv6 Unique Local Address range fc00::/7 (RFC 4193).
+     * InetAddress.isSiteLocalAddress() only recognizes the deprecated
+     * fec0::/10 range for IPv6, so modern ULA addresses (fc00::/7, the
+     * IPv6 equivalent of RFC 1918 private IPv4 space) are NOT caught by
+     * the isSiteLocalAddress() check above and must be tested explicitly.
+     */
+    private boolean isIpv6UniqueLocal(InetAddress address) {
+        byte[] bytes = address.getAddress();
+        return bytes.length == 16 && (bytes[0] & 0xFE) == 0xFC;
     }
 
     private String rebuild(URL url) {

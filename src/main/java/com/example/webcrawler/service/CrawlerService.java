@@ -161,24 +161,49 @@ public class CrawlerService {
         return Math.min(requested, properties.getMaxAllowedPages());
     }
 
+    private static final int MAX_REDIRECTS = 5;
+
+    /**
+     * Fetches a page, following redirects manually (one hop at a time)
+     * instead of letting Jsoup auto-follow them. Auto-follow would connect
+     * to the redirect target BEFORE we get a chance to validate it, so a
+     * public URL could redirect to an internal address and the crawler
+     * would already have made that request by the time any check ran.
+     * Validating each hop's target before connecting to it closes that gap.
+     */
     private Document fetchPage(String url) throws java.io.IOException {
-        Connection connection = Jsoup.connect(url)
-                .userAgent(properties.getUserAgent())
-                .timeout(properties.getTimeoutMs())
-                .followRedirects(true)
-                .ignoreHttpErrors(false)
-                .ignoreContentType(false);
+        String currentUrl = url;
 
-        Document document = connection.get();
+        for (int redirectCount = 0; redirectCount <= MAX_REDIRECTS; redirectCount++) {
+            Connection connection = Jsoup.connect(currentUrl)
+                    .userAgent(properties.getUserAgent())
+                    .timeout(properties.getTimeoutMs())
+                    .followRedirects(false)
+                    .ignoreHttpErrors(true)
+                    .ignoreContentType(false);
 
-        // Verify the final URL (after any redirects) is still safe; this
-        // stops a public URL from redirecting into an internal address to
-        // bypass the initial SSRF check.
-        String finalUrl = connection.response().url().toString();
-        if (urlValidator.normalizeAndValidate(finalUrl) == null) {
-            throw new java.io.IOException("Redirect target rejected by URL safety policy: " + finalUrl);
+            Connection.Response response = connection.execute();
+            int status = response.statusCode();
+
+            if (status >= 300 && status < 400 && response.hasHeader("Location")) {
+                String redirectTarget = response.header("Location");
+                // Resolve relative Location headers against the URL we just requested.
+                String absoluteTarget = java.net.URI.create(currentUrl).resolve(redirectTarget).toString();
+                String validatedTarget = urlValidator.normalizeAndValidate(absoluteTarget);
+                if (validatedTarget == null) {
+                    throw new java.io.IOException("Redirect target rejected by URL safety policy: " + absoluteTarget);
+                }
+                currentUrl = validatedTarget;
+                continue;
+            }
+
+            if (status >= 400) {
+                throw new java.io.IOException("HTTP error " + status + " fetching " + currentUrl);
+            }
+
+            return response.parse();
         }
 
-        return document;
+        throw new java.io.IOException("Too many redirects fetching " + url);
     }
 }

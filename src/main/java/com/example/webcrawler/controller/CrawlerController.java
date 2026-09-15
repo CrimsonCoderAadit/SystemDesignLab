@@ -57,12 +57,21 @@ public class CrawlerController {
             status.put("discoveredCount", discoveredCount == null ? 0 : discoveredCount);
         } catch (Exception e) {
             status.put("redisConnected", false);
-            status.put("message", "Could not reach Redis: " + e.getMessage());
+            status.put("message", "Could not reach Redis");
             return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(status);
         }
         return ResponseEntity.ok(status);
     }
 
+    /**
+     * KNOWN LIMITATION (accepted for this lab's scope): this endpoint has
+     * no authentication or authorization, so anyone who can reach the API
+     * can wipe crawler state. The lab spec explicitly calls for no
+     * authentication to keep the demo simple, and this endpoint exists
+     * purely to let the same demo be repeated cleanly. Do not expose this
+     * API outside a trusted/local demo environment without adding access
+     * control (e.g. an API key or network-level restriction) in front of it.
+     */
     @DeleteMapping("/reset")
     public ResponseEntity<Map<String, String>> reset() {
         redisTemplate.delete(VISITED_KEY);
